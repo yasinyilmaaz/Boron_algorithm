@@ -10,7 +10,7 @@
 ## 📌 Proje Özeti
 [cite_start]IoT cihazlarının kısıtlı işlem gücü ve enerji kaynakları göz önünde bulundurularak, BORON algoritması (80-bit anahtar, 64-bit veri bloğu) Verilog HDL kullanılarak modüler bir mimaride tasarlanmıştır[cite: 17, 23]. [cite_start]Tasarım, hem şifreleme (encryption) hem de deşifreleme (decryption) süreçlerini kapsayan tam bir IP çekirdeği (IP Core) olarak geliştirilmiştir[cite: 53, 172].
 
-![Görsel Açıklaması](media/dosya_adi.png)
+![media/dosya_adi.png](https://github.com/yasinyilmaaz/Boron_algorithm/blob/main/media/vivado.png)
 
 ### Temel Özellikler
 * [cite_start]**Algoritma Yapısı**: İkame-Permütasyon Ağı (SPN) mimarisi[cite: 20, 58].
