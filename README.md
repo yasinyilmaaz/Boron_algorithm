@@ -18,14 +18,14 @@
 * [cite_start]**Donanım Yaklaşımı**: FPGA üzerinde alan israfını önlemek için **tekrarlamalı (iterative) mimari** tercih edilmiştir[cite: 104, 106].
 * [cite_start]**Doğrulama**: C dili ile oluşturulan referans "Golden Model" ve Vivado simülasyonları ile matematiksel tutarlılık ispatlanmıştır[cite: 89, 99].
 
-## 🛠 Teknik Mimari ve Modüller
+##  Teknik Mimari ve Modüller
 [cite_start]Sistem, donanımsal senkronizasyonu yöneten bir Sonlu Durum Makinesi (FSM) ve üç ana katmandan oluşur[cite: 63, 81]:
 
 1.  [cite_start]**S-Box Katmanı**: 16 adet 4x4 S-Box birimi eşzamanlı çalışarak paralel işlem kapasitesini maksimize eder[cite: 71].
 2.  [cite_start]**Permütasyon Katmanı**: Blok karıştırma (Block Shuffle), dairesel kaydırma ve 16-bitlik bloklar arası XOR işlemlerini içerir[cite: 72, 73].
 3.  [cite_start]**Anahtar Üretim Modülü**: 80-bitlik kök anahtardan her tur için dinamik olarak 64-bitlik alt anahtarlar üretir[cite: 76, 77].
 
-## 📊 Performans ve Kaynak Kullanımı
+##  Performans ve Kaynak Kullanımı
 [cite_start]**Basys 3 (Artix-7 XC7A35T)** platformu üzerinde yapılan fiziksel test sonuçları şöyledir[cite: 25, 115]:
 
 ### Donanım Kaynakları (Utilization)
@@ -40,14 +40,14 @@
 * [cite_start]**Toplam Güç Tüketimi**: ~0.115 W (Prototip ölçümü)[cite: 162].
 * [cite_start]**Termal Doyum**: İşlem başladığında sıcaklık 48.7°C seviyesinde dengeye ulaşmaktadır[cite: 142, 162].
 
-## 📂 Depo Yapısı
+##  Depo Yapısı
 * [cite_start]`Dec_Boron_Wrapper.v`: Sistemin en üst sarmalayıcı (top-level) modülü[cite: 256].
 * [cite_start]`Dec_Boron_Cntrl.v`: Şifreleme/Deşifreleme süreçlerini yöneten FSM kontrol birimi[cite: 226].
 * [cite_start]`Dec_Key_Scheduler.v`: Deşifreleme süreci için anahtar planlayıcı[cite: 272].
 * [cite_start]`Dec_Round.v`: Bir turluk şifreleme/deşifreleme operasyonunu gerçekleştiren modül[cite: 288].
 * [cite_start]`Dec_S_box.v`: Algoritmanın doğrusal olmayan dönüşüm katmanı[cite: 275].
 
-## 🚀 Kullanım
+##  Kullanım
 1.  [cite_start]**Vivado IDE** üzerinde yeni bir proje oluşturun ve hedef cihaz olarak `XC7A35T` seçin[cite: 180].
 2.  `src` dizinindeki tüm `.v` dosyalarını projeye ekleyin.
 3.  [cite_start]Simülasyon için `Boron_Complete_Wrapper_tb.v` dosyasını kullanarak çıktıları doğrulayın[cite: 166].
